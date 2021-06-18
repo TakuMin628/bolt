@@ -13,11 +13,19 @@
   margin: 0 auto;
 }
 
+.title-text {
+  font-family: "Raleway";
+}
+
+.text {
+  font-family: "Lato";
+}
+
 .header {
   position: fixed;
   width: 100%;
   background-color: #fff;
-  z-index: 2;
+  z-index: 1000;
 }
 
 .header-inner {
@@ -26,7 +34,6 @@
 
 .fa-bolt {
   font-size: 48px;
-  color: #c0c0c0;
 }
 
 .header-button,
@@ -67,9 +74,9 @@
 }
 
 .title-inner_heading-text {
+  font-weight: 700;
   font-size: 90px;
   color: #74cfae;
-  font-weight: bold;
 }
 
 .title-inner_text {
@@ -84,17 +91,16 @@
 
 .section-inner {
   padding-top: 50px;
+  display: flex;
 }
 
 .section-title {
   font-size: 24px;
-  font-family: "Raleway", 'Lato';
 }
 
 .section-text_around {
   color: #fff;
-  float: left;
-  margin-left: 40px;
+  margin: 10px 0 0 140px;
 }
 
 .section-text {
@@ -104,7 +110,6 @@
 }
 
 .section-image_around {
-  float: left;
   margin-left: 100px;
 }
 
@@ -119,7 +124,6 @@
 
 .article-title {
   font-size: 24px;
-  font-family: "Raleway", 'Lato';
   text-align: center;
 }
 
@@ -130,21 +134,22 @@
   margin-top: 40px;
 }
 
-.image-hover {
-  margin-bottom: 80px;
+.article-image {
+  margin-top: 80px;
   opacity: 0.7;
   transition: all .3s;
+  display: block;
 }
 
-.image-hover:hover {
-  transition: all .3s;
+.article-image:hover{
   opacity: 1;
+  transition: all .3s;
 }
 
-.article-image_around .article-image:nth-child(4) .image-hover,
-.article-image_around .article-image:nth-child(5) .image-hover,
-.article-image_around .article-image:nth-child(6) .image-hover {
-  margin-bottom: 0;
+.article-image_around .image-hover:nth-child(1) .article-image,
+.article-image_around .image-hover:nth-child(2) .article-image,
+.article-image_around .image-hover:nth-child(3) .article-image{
+  margin-top: 0;
 }
 
 .article-footer {
@@ -164,281 +169,7 @@
 
 .skills-title {
   font-size: 24px;
-  font-family: "Raleway", 'Lato';
 }
-
-.skills-javascript {
-  position: relative;
-  width: 120px;
-  height: 120px;
-  background:#74cfae;
-  border-radius: 50%;
-  text-align: center;
-  overflow: hidden;
-  z-index: 1;
-}
-
-.skills-javascript::after {
-  content: "";
-    display: block;
-    position: absolute;
-    top: 0px;
-    left: 60px;
-    width: 120px;
-    height: 120px;
-    background:	#4e4e4e;
-    transform-origin: left 60px;
-    z-index: 3;
-    animation: rotate-right-JavaScript 2s linear forwards;
-}
-
-.skills-javascript::before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 0;
-  left: -60px;
-  width: 120px;
-  height: 120px;
-  background:	#4e4e4e;
-  transform-origin: right 60px;
-  z-index: 2;
-  animation: rotate-left-JavaScript 2s linear forwards;
-}
-
-.skills-bootstrap {
-  position: relative;
-  width: 120px;
-  height: 120px;
-  background:#74cfae;
-  border-radius: 50%;
-  text-align: center;
-  overflow: hidden;
-  z-index: 1;
-}
-
-.skills-bootstrap::after {
-  content: "";
-    display: block;
-    position: absolute;
-    top: 0px;
-    left: 60px;
-    width: 120px;
-    height: 120px;
-    background:	#4e4e4e;
-    transform-origin: left 60px;
-    z-index: 3;
-    animation: rotate-right-bootstrap 2s linear forwards;
-}
-
-.skills-bootstrap::before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 0;
-  left: -60px;
-  width: 120px;
-  height: 120px;
-  background:	#4e4e4e;
-  transform-origin: right 60px;
-  z-index: 2;
-  animation: rotate-left-bootstrap 2s linear forwards;
-}
-
-.skills-wordpress {
-  position: relative;
-  width: 120px;
-  height: 120px;
-  background:#74cfae;
-  border-radius: 50%;
-  text-align: center;
-  overflow: hidden;
-  z-index: 1;
-}
-
-.skills-wordpress::after {
-  content: "";
-    display: block;
-    position: absolute;
-    top: 0px;
-    left: 60px;
-    width: 120px;
-    height: 120px;
-    background:	#4e4e4e;
-    transform-origin: left 60px;
-    z-index: 3;
-    animation: rotate-right-wordpress 2s linear forwards;
-}
-
-.skills-wordpress::before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 0;
-  left: -60px;
-  width: 120px;
-  height: 120px;
-  background:	#4e4e4e;
-  transform-origin: right 60px;
-  z-index: 2;
-  animation: rotate-left-wordpress 2s linear forwards;
-}
-
-.skills-photoshop {
-  position: relative;
-  width: 120px;
-  height: 120px;
-  background:#74cfae;
-  border-radius: 50%;
-  text-align: center;
-  overflow: hidden;
-  z-index: 1;
-}
-
-.skills-photoshop::after {
-  content: "";
-    display: block;
-    position: absolute;
-    top: 0px;
-    left: 60px;
-    width: 120px;
-    height: 120px;
-    background:	#4e4e4e;
-    transform-origin: left 60px;
-    z-index: 3;
-    animation: rotate-right-photoshop 2s linear forwards;
-}
-
-.skills-photoshop::before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 0;
-  left: -60px;
-  width: 120px;
-  height: 120px;
-  background:	#4e4e4e;
-  transform-origin: right 60px;
-  z-index: 2;
-  animation: rotate-left-photoshop 2s linear forwards;
-}
-
-.skills-inner {
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  width: 80px;
-  height: 42px;
-  padding-top: 38px;
-  background: #4e4e4e;
-  border-radius: 50%;
-  z-index: 4;
-}
-
-
-
-@keyframes rotate-right-JavaScript {
-  0%   {
-      transform: rotate(0deg);
-      background:	#4e4e4e;
-  }
-  50%  {
-      transform: rotate(180deg);
-      background:	#4e4e4e;
-  }
-  50.01% {
-      transform: rotate(360deg);
-      background:#74cfae;
-  }
-  100% {
-      transform: rotate(360deg);
-      background: #74cfae;
-  }
-}
-
-@keyframes rotate-left-JavaScript {
-  0%   { transform: rotate(0deg); }
-  50%  { transform: rotate(0deg); }
-  100% { transform: rotate(75deg); }
-}
-
-@keyframes rotate-right-bootstrap {
-  0%   {
-      transform: rotate(0deg);
-      background:	#4e4e4e;
-  }
-  50%  {
-      transform: rotate(180deg);
-      background:	#4e4e4e;
-  }
-  50.01% {
-      transform: rotate(360deg);
-      background:#74cfae;
-  }
-  100% {
-      transform: rotate(360deg);
-      background: #74cfae;
-  }
-}
-
-@keyframes rotate-left-bootstrap {
-  0%   { transform: rotate(0deg); }
-  50%  { transform: rotate(0deg); }
-  100% { transform: rotate(150deg); }
-}
-
-@keyframes rotate-right-wordpress {
-  0%   {
-      transform: rotate(0deg);
-      background:	#4e4e4e;
-  }
-  50%  {
-      transform: rotate(180deg);
-      background:	#4e4e4e;
-  }
-  50.01% {
-      transform: rotate(360deg);
-      background:#74cfae;
-  }
-  100% {
-      transform: rotate(360deg);
-      background: #74cfae;
-  }
-}
-
-@keyframes rotate-left-wordpress {
-  0%   { transform: rotate(0deg); }
-  50%  { transform: rotate(0deg); }
-  100% { transform: rotate(60deg); }
-}
-
-@keyframes rotate-right-photoshop {
-  0%   {
-      transform: rotate(0deg);
-      background:	#4e4e4e;
-  }
-  50%  {
-      transform: rotate(180deg);
-      background:	#4e4e4e;
-  }
-  50.01% {
-      transform: rotate(360deg);
-      background:#74cfae;
-  }
-  100% {
-      transform: rotate(360deg);
-      background: #74cfae;
-  }
-}
-
-@keyframes rotate-left-photoshop {
-  0%   { transform: rotate(0deg); }
-  50%  { transform: rotate(0deg); }
-  100% { transform: rotate(0deg); }
-}
-
-
-
 
 .skills-box {
   justify-content: center;
@@ -511,4 +242,5 @@
 
 .footer-inner {
   padding: 20px 0 25px 0;
+  overflow: hidden;
 }
