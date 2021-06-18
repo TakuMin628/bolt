@@ -52,6 +52,7 @@
 .article-button {
   padding: 14px 20px;
   margin-left: 90px;
+  height: 16px;
 }
 
 .header-button:hover,
@@ -161,6 +162,7 @@
 
 .article-text {
   text-align: center;
+  font-size: 20px;
 }
 
 .skills-around_inner {
