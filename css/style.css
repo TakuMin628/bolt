@@ -8,6 +8,14 @@
   visibility: hidden;
 }
 
+body {
+  font-family: "Lato";
+}
+
+main {
+  padding-top: 78px;
+}
+
 img {
   vertical-align: bottom;
 }
@@ -19,10 +27,6 @@ img {
 
 .title-text {
   font-family: "Raleway";
-}
-
-.text {
-  font-family: "Lato";
 }
 
 .header {
@@ -61,8 +65,7 @@ img {
   height: 16px;
 }
 
-.header-button:hover,
-.article-button:hover {
+.button:hover {
   transition: all .3s;
   color: #333;
 }
@@ -72,7 +75,7 @@ img {
 }
 
 .title-inner {
-  padding: 313px 0 250px 0;
+  padding: 250px 0 250px 0;
 }
 
 .title-inner,
@@ -99,6 +102,7 @@ img {
 .section-inner {
   padding-top: 50px;
   display: flex;
+  justify-content: space-around;
 }
 
 .section-title {
@@ -107,17 +111,14 @@ img {
 
 .section-text_around {
   color: #fff;
-  margin: 10px 0 0 140px;
+  margin-top: 10px;
+  width: 650px;
 }
 
 .section-text {
   font-size: 20px;
   line-height: 25px;
   margin-top: 35px;
-}
-
-.section-image_around {
-  margin-left: 100px;
 }
 
 .article {
@@ -161,7 +162,6 @@ img {
 
 .article-footer {
   margin-top: 90px;
-  overflow: hidden;
   display: flex;
   justify-content: center;
 }
@@ -181,9 +181,7 @@ img {
 }
 
 .skills-box {
-  justify-content: center;
   margin-left: 180px;
-  float: left;
 }
 
 .skills-box_around :nth-child(1) {
@@ -191,15 +189,14 @@ img {
 }
 
 .skills-box_around {
-  overflow: hidden;
-  display: inline-block;
+  display: flex;
+  justify-content: center;
   margin-top: 70px;
 }
 
 .skills {
   background-color:	#4e4e4e;
   color: #fff;
-  overflow: hidden;
   text-align: center;
 }
 
@@ -211,31 +208,27 @@ img {
   font-size: 0px;
   padding: 200px 0;
   text-align: center;
-}
-
-.list-item {
-  display: inline-block;
-  font-size: 32px;
-  width: 185px;
-  height: 100px;
-  position: relative;
-  transition: all .3s;
+  display: flex;
+  justify-content: center;
 }
 
 .nav-icon {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translateY(-50%) translateX(-50%);
-  -webkit-transform: translateY(-50%) translateX(-50%);
   color: #74cfae;
+  font-size: 32px;
+  width: 185px;
+  height: 100px;
+  transition: all .3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
 }
 
 .nav {
   background-color:	#f2f2f2;
 }
 
-.list-item:hover {
+.nav-icon:hover {
   transition: all .3s;
   background-color: #fff;
 }
@@ -246,10 +239,9 @@ img {
 
 .footer-text {
   color: #fff;
-  float: right;
+  text-align: right;
 }
 
 .footer-inner {
   padding: 20px 0 25px 0;
-  overflow: hidden;
 }
