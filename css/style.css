@@ -46,6 +46,10 @@ img {
   font-size: 48px;
 }
 
+.fa-bars {
+  display: none;
+}
+
 .header-button,
 .article-button {
   background-color: #74cfae;
@@ -70,10 +74,6 @@ img {
   color: #333;
 }
 
-.title {
-  background-color: #f2f2f2;
-}
-
 .title-inner {
   padding: 250px 0 250px 0;
 }
@@ -87,6 +87,10 @@ img {
   font-weight: 700;
   font-size: 90px;
   color: #74cfae;
+}
+
+.title {
+  background-color: #f2f2f2;
 }
 
 .title-inner_text {
@@ -122,8 +126,8 @@ img {
 }
 
 .article {
-  background-color: #f2f2f2;
   z-index: 1;
+  background-color: #f2f2f2;
 }
 
 .article-inner {
@@ -138,7 +142,7 @@ img {
 .article-image_around {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: flex-start;
   margin-top: 40px;
 }
 
@@ -147,6 +151,7 @@ img {
   opacity: 0.7;
   transition: all .3s;
   display: block;
+  margin-left: 100px;
 }
 
 .article-image:hover{
@@ -156,8 +161,13 @@ img {
 
 .article-image_around .image-hover:nth-child(1) .article-image,
 .article-image_around .image-hover:nth-child(2) .article-image,
-.article-image_around .image-hover:nth-child(3) .article-image{
+.article-image_around .image-hover:nth-child(3) .article-image {
   margin-top: 0;
+}
+
+.article-image_around .image-hover:nth-child(1) .article-image,
+.article-image_around .image-hover:nth-child(4) .article-image {
+  margin-left: 0;
 }
 
 .article-footer {
@@ -195,13 +205,17 @@ img {
 }
 
 .skills {
-  background-color:	#4e4e4e;
   color: #fff;
   text-align: center;
+  background-color:	#4e4e4e;
 }
 
 .skills-box_text {
   margin-top: 10px;
+}
+
+.nav {
+  background-color:	#f2f2f2;
 }
 
 .nav-inner {
@@ -224,10 +238,6 @@ img {
   text-decoration: none;
 }
 
-.nav {
-  background-color:	#f2f2f2;
-}
-
 .nav-icon:hover {
   transition: all .3s;
   background-color: #fff;
@@ -244,4 +254,158 @@ img {
 
 .footer-inner {
   padding: 20px 0 25px 0;
+}
+
+
+
+
+@media (max-width: 1199px ) {
+  .inner {
+    width: 100%;
+  }
+
+  .header {
+    width: 100vw;
+  }
+
+  .header-inner {
+    padding: 15px;
+    box-sizing: border-box;
+  }
+
+  .section-inner {
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0 25px 0;
+  }
+
+  .section-text_around {
+    margin-top: 20px;
+  }
+
+  .article-image {
+    margin-left: 0;
+    margin-top: 0;
+  }
+
+  .article-image_around {
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .article-image_around .image-hover:nth-child(4) .article-image {
+    margin-top: 80px;
+  }
+
+  .article-footer {
+    margin-top: 80px;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .article-button {
+    margin: 40px 0 0 0;
+  }
+
+  .article-text {
+    width: initial;
+  }
+
+  .skills-box_around {
+    flex-direction: column;
+  }
+
+  .skills-box {
+    margin: 88px 0 0 0 ;
+  }
+
+}
+
+@media (max-width: 767px ) {
+  .inner {
+    width: 100%;
+  } 
+
+  .header {
+    width: 100vw;
+  }
+
+  .header-inner {
+    padding: 15px 15px;
+    box-sizing: border-box;
+  }
+
+  .header-button {
+    display: none;
+  }
+
+  .fa-bars {
+    display: block;
+    float: right;
+    font-size: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 10px;
+  }
+
+  .title-inner {
+    padding: 160px 0 130px 0;
+  }
+
+  .section-inner {
+    display: flex;
+    padding: 50px 0 20px 0;
+  }
+
+  .section-text_around {
+    width: initial;
+  }
+
+  .article-image {
+    margin-left: 0;
+    margin-top: 0;
+  }
+
+  .article-image_around {
+  justify-content: center;
+  }
+
+  .article-button {
+    margin-top: 50px;
+    margin-left: 0;
+  }
+
+  .article-footer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .article-text {
+    width: initial;
+  }
+
+  .skills-box_around {
+    flex-direction: column;
+  }
+
+  .skills-box {
+    margin-left: 0;
+    margin-top: 100px;
+  }
+
+  .nav-inner {
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 15px 50px 15px;
+    box-sizing: border-box;
+  }
+
+  .nav-icon {
+    width: 290px;
+  }
+
+  .footer-text {
+    margin-right: 10px;
+  }
 }
