@@ -148,7 +148,7 @@ img {
 
 .image-hover {
   margin: 80px 0 0 100px;
-  opacity: 0.7;
+  opacity: .7;
   transition: all .3s;
   display: block;
 }
