@@ -158,7 +158,7 @@ img {
   transition: all .3s;
 }
 
-.article-image_around .image-hover:nth-child(1):nth-child(3) {
+.article-image_around .image-hover:nth-child(-n+3) {
   margin-top: 0;
 }
 
@@ -219,13 +219,21 @@ img {
   width: 185px;
   height: 100px;
   transition: all .3s;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  position: relative;
 }
 
 .icon-color {
   color: #74cfae;
+}
+
+.icon-click {
+  display: block;
+  position: absolute;
+  top: 35px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
 }
 
 .nav-icon:hover {
@@ -340,15 +348,15 @@ img {
     box-sizing: border-box;
   }
 
-  .humberger-first {
+  .humberger-line:first-child {
     bottom: 22px;
   }
 
-  .humberger-second {
+  .humberger-line:nth-child(2) {
     bottom: 15px;
   }
 
-  .humberger-third {
+  .humberger-line:last-child {
     bottom: 7px;
   }
 
